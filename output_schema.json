@@ -1,0 +1,831 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "attachments": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "project_id": {
+                            "type": "str"
+                        },
+                        "name": {
+                            "type": "str"
+                        },
+                        "note": {
+                            "type": "str"
+                        },
+                        "mime_type": {
+                            "type": "str"
+                        },
+                        "size": {
+                            "type": "str"
+                        },
+                        "created_at": {
+                            "type": "str"
+                        },
+                        "created_by": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "configs": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "name": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "field_values": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "field_id": {
+                            "type": "str"
+                        },
+                        "name": {
+                            "type": "str"
+                        },
+                        "icon": {
+                            "type": "str"
+                        },
+                        "color": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "fields": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "type": {
+                            "type": "str"
+                        },
+                        "name": {
+                            "type": "str"
+                        },
+                        "system_name": {
+                            "type": "str"
+                        },
+                        "column_name": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "groups": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "name": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "project_attachments": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "project_id": {
+                            "type": "str"
+                        },
+                        "attachment_id": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "project_images": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "project_id": {
+                            "type": "str"
+                        },
+                        "attachment_id": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "project_links": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "project_id": {
+                            "type": "str"
+                        },
+                        "name": {
+                            "type": "str"
+                        },
+                        "note": {
+                            "type": "str"
+                        },
+                        "url": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "projects": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "name": {
+                            "type": "str"
+                        },
+                        "note": {
+                            "type": "str"
+                        },
+                        "docs": {
+                            "type": "str"
+                        },
+                        "is_completed": {
+                            "type": "str"
+                        },
+                        "created_at": {
+                            "type": "str"
+                        },
+                        "created_by": {
+                            "type": "str"
+                        },
+                        "completed_at": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "repositories": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "key": {
+                            "type": "str"
+                        },
+                        "project_id": {
+                            "type": "str"
+                        },
+                        "is_master": {
+                            "type": "str"
+                        },
+                        "is_snapshot": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "repository_case_attachments": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "project_id": {
+                            "type": "str"
+                        },
+                        "repo_id": {
+                            "type": "str"
+                        },
+                        "case_id": {
+                            "type": "str"
+                        },
+                        "attachment_id": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "repository_case_comments": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "project_id": {
+                            "type": "str"
+                        },
+                        "repo_id": {
+                            "type": "str"
+                        },
+                        "case_id": {
+                            "type": "str"
+                        },
+                        "comment": {
+                            "type": "str"
+                        },
+                        "is_deleted": {
+                            "type": "str"
+                        },
+                        "created_at": {
+                            "type": "str"
+                        },
+                        "created_by": {
+                            "type": "str"
+                        },
+                        "deleted_at": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "repository_case_configs": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "project_id": {
+                            "type": "str"
+                        },
+                        "repo_id": {
+                            "type": "str"
+                        },
+                        "case_id": {
+                            "type": "str"
+                        },
+                        "config_id": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "repository_case_issues": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "project_id": {
+                            "type": "str"
+                        },
+                        "repo_id": {
+                            "type": "str"
+                        },
+                        "case_id": {
+                            "type": "str"
+                        },
+                        "issue_id": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "repository_case_steps": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "project_id": {
+                            "type": "str"
+                        },
+                        "repo_id": {
+                            "type": "str"
+                        },
+                        "case_id": {
+                            "type": "str"
+                        },
+                        "field_id": {
+                            "type": "str"
+                        },
+                        "text1": {
+                            "type": "str"
+                        },
+                        "text2": {
+                            "type": "str"
+                        },
+                        "text3": {
+                            "type": "str"
+                        },
+                        "text4": {
+                            "type": "str"
+                        },
+                        "display_order": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "repository_case_tags": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "project_id": {
+                            "type": "str"
+                        },
+                        "repo_id": {
+                            "type": "str"
+                        },
+                        "case_id": {
+                            "type": "str"
+                        },
+                        "tag_id": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "repository_case_values": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "project_id": {
+                            "type": "str"
+                        },
+                        "repo_id": {
+                            "type": "str"
+                        },
+                        "case_id": {
+                            "type": "str"
+                        },
+                        "field_id": {
+                            "type": "str"
+                        },
+                        "value_id": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "repository_cases": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "key": {
+                            "type": "str"
+                        },
+                        "project_id": {
+                            "type": "str"
+                        },
+                        "repo_id": {
+                            "type": "str"
+                        },
+                        "folder_id": {
+                            "type": "str"
+                        },
+                        "template_id": {
+                            "type": "str"
+                        },
+                        "name": {
+                            "type": "str"
+                        },
+                        "state_id": {
+                            "type": "str"
+                        },
+                        "estimate": {
+                            "type": "str"
+                        },
+                        "forecast": {
+                            "type": "str"
+                        },
+                        "display_order": {
+                            "type": "str"
+                        },
+                        "created_at": {
+                            "type": "str"
+                        },
+                        "created_by": {
+                            "type": "str"
+                        },
+                        "custom_priority": {
+                            "type": "str"
+                        },
+                        "custom_description": {
+                            "type": "str"
+                        },
+                        "custom_expected": {
+                            "type": "str"
+                        },
+                        "custom_automation_status": {
+                            "type": "str"
+                        },
+                        "custom_preconditions": {
+                            "type": "str"
+                        },
+                        "custom_steps_text": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "repository_folders": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "project_id": {
+                            "type": "str"
+                        },
+                        "repo_id": {
+                            "type": "str"
+                        },
+                        "parent_id": {
+                            "type": "str"
+                        },
+                        "name": {
+                            "type": "str"
+                        },
+                        "docs": {
+                            "type": "str"
+                        },
+                        "display_order": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "roles": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "name": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "states": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "name": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "statuses": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "name": {
+                            "type": "str"
+                        },
+                        "system_name": {
+                            "type": "str"
+                        },
+                        "color": {
+                            "type": "str"
+                        },
+                        "is_final": {
+                            "type": "str"
+                        },
+                        "is_untested": {
+                            "type": "str"
+                        },
+                        "is_passed": {
+                            "type": "str"
+                        },
+                        "is_failed": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "tags": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "project_id": {
+                            "type": "str"
+                        },
+                        "name": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "template_fields": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "template_id": {
+                            "type": "str"
+                        },
+                        "field_id": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "templates": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "name": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "user_groups": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "user_id": {
+                            "type": "str"
+                        },
+                        "group_id": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        },
+        "users": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+                "schema": {
+                    "$schema": "http://json-schema.org/draft-07/schema#",
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "str"
+                        },
+                        "name": {
+                            "type": "str"
+                        },
+                        "email": {
+                            "type": "str"
+                        },
+                        "type": {
+                            "type": "str"
+                        },
+                        "role_id": {
+                            "type": "str"
+                        },
+                        "is_active": {
+                            "type": "str"
+                        },
+                        "is_api": {
+                            "type": "str"
+                        },
+                        "created_at": {
+                            "type": "str"
+                        },
+                        "created_by": {
+                            "type": "str"
+                        }
+                    }
+                },
+                "data": {
+                    "type": "list"
+                }
+            }
+        }
+    }
+}

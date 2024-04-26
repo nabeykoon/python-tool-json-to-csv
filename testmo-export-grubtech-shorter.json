@@ -1,0 +1,440 @@
+{
+"attachments": {
+    "schema": {"id":"id","project_id":"id","name":"string","note":"string","mime_type":"string","size":"uint","created_at":"timestamp","created_by":"id"},
+    "data": [
+{"id":2,"project_id":2,"name":"image.png","note":null,"mime_type":"image\/png","size":11766,"created_at":"2024-01-19 12:20:41.158973","created_by":1},
+{"id":3,"project_id":2,"name":"image.png","note":null,"mime_type":"image\/png","size":11766,"created_at":"2024-01-19 12:25:12.758522","created_by":1},
+{"id":4,"project_id":2,"name":"image.png","note":null,"mime_type":"image\/png","size":11766,"created_at":"2024-01-19 12:31:50.873863","created_by":1},
+{"id":5,"project_id":2,"name":"Screenshot 2023-05-02 135807.png","note":null,"mime_type":"image\/png","size":9833,"created_at":"2024-02-16 13:45:44.054400","created_by":1}
+    ]
+},
+"configs": {
+    "schema": {"id":"id","name":"string"},
+    "data": [
+
+    ]
+},
+"field_values": {
+    "schema": {"id":"id","field_id":"id","name":"string","icon":"string","color":"string"},
+    "data": [
+{"id":1,"field_id":2,"name":"High","icon":"angle-double-up","color":"2A843F"},
+{"id":2,"field_id":2,"name":"Normal","icon":"dot-circle","color":"1F74A4"},
+{"id":3,"field_id":2,"name":"Low","icon":"angle-double-down","color":"BD2B0A"},
+{"id":4,"field_id":5,"name":"Step","icon":null,"color":null},
+{"id":5,"field_id":5,"name":"Data","icon":null,"color":null},
+{"id":6,"field_id":5,"name":"Expected","icon":null,"color":null},
+{"id":7,"field_id":5,"name":"-","icon":null,"color":null},
+{"id":8,"field_id":6,"name":"None","icon":null,"color":null},
+{"id":9,"field_id":6,"name":"Automated","icon":null,"color":null},
+{"id":10,"field_id":6,"name":"Not Automated","icon":null,"color":null},
+{"id":11,"field_id":6,"name":"Not Automatable","icon":null,"color":null},
+{"id":12,"field_id":6,"name":"To Be Automated","icon":null,"color":null},
+{"id":13,"field_id":7,"name":"None","icon":null,"color":null},
+{"id":14,"field_id":7,"name":"UNIT","icon":null,"color":null},
+{"id":15,"field_id":7,"name":"INTEGRATION","icon":null,"color":null},
+{"id":16,"field_id":7,"name":"API","icon":null,"color":null},
+{"id":17,"field_id":7,"name":"UI","icon":null,"color":null},
+{"id":18,"field_id":8,"name":"Smoke","icon":null,"color":null},
+{"id":19,"field_id":8,"name":"Regression","icon":null,"color":null},
+{"id":20,"field_id":8,"name":"None","icon":null,"color":null}
+    ]
+},
+"fields": {
+    "schema": {"id":"id","type":"uint","name":"string","system_name":"string","column_name":"string"},
+    "data": [
+{"id":1,"type":2,"name":"Mission","system_name":"mission","column_name":"custom_mission"},
+{"id":2,"type":8,"name":"Priority","system_name":"priority","column_name":"custom_priority"},
+{"id":3,"type":2,"name":"Description","system_name":"description","column_name":"custom_description"},
+{"id":4,"type":2,"name":"Expected","system_name":"expected","column_name":"custom_expected"},
+{"id":5,"type":10,"name":"Steps","system_name":"steps","column_name":"custom_steps"},
+{"id":6,"type":8,"name":"Automation Status","system_name":"automation_status","column_name":"custom_automation_status"},
+{"id":7,"type":9,"name":"Automation Test Level","system_name":"automation_test_level","column_name":"custom_automation_test_level"},
+{"id":8,"type":9,"name":"Test Case Category","system_name":"test_case_category","column_name":"custom_test_case_category"},
+{"id":9,"type":2,"name":"Preconditions","system_name":"preconditions","column_name":"custom_preconditions"},
+{"id":10,"type":2,"name":"Steps","system_name":"steps_text","column_name":"custom_steps_text"}
+    ]
+},
+"groups": {
+    "schema": {"id":"id","name":"string"},
+    "data": [
+
+    ]
+},
+"project_attachments": {
+    "schema": {"project_id":"id","attachment_id":"id"},
+    "data": [
+
+    ]
+},
+"project_images": {
+    "schema": {"project_id":"id","attachment_id":"id"},
+    "data": [
+{"project_id":2,"attachment_id":3},
+{"project_id":2,"attachment_id":4},
+{"project_id":2,"attachment_id":5}
+    ]
+},
+"project_links": {
+    "schema": {"id":"id","project_id":"id","name":"string","note":"string","url":"string"},
+    "data": [
+
+    ]
+},
+"projects": {
+    "schema": {"id":"id","name":"string","note":"string","docs":"text","is_completed":"bool","created_at":"timestamp","created_by":"id","completed_at":"timestamp"},
+    "data": [
+{"id":2,"name":"R&D - Test","note":null,"docs":null,"is_completed":0,"created_at":"2024-01-16 11:16:34.286217","created_by":1,"completed_at":null}
+    ]
+},
+"repositories": {
+    "schema": {"id":"id","key":"id","project_id":"id","is_master":"bool","is_snapshot":"bool"},
+    "data": [
+{"id":2,"key":2,"project_id":2,"is_master":1,"is_snapshot":0}
+    ]
+},
+"repository_case_attachments": {
+    "schema": {"project_id":"id","repo_id":"id","case_id":"id","attachment_id":"id"},
+    "data": [
+{"project_id":2,"repo_id":2,"case_id":328,"attachment_id":2}
+    ]
+},
+"repository_case_comments": {
+    "schema": {"id":"id","project_id":"id","repo_id":"id","case_id":"id","comment":"text","is_deleted":"bool","created_at":"timestamp","created_by":"id","deleted_at":"timestamp"},
+    "data": [
+
+    ]
+},
+"repository_case_configs": {
+    "schema": {"project_id":"id","repo_id":"id","case_id":"id","config_id":"id"},
+    "data": [
+
+    ]
+},
+"repository_case_issues": {
+    "schema": {"project_id":"id","repo_id":"id","case_id":"id","issue_id":"id"},
+    "data": [
+
+    ]
+},
+"repository_case_steps": {
+    "schema": {"id":"id","project_id":"id","repo_id":"id","case_id":"id","field_id":"id","text1":"text","text2":"text","text3":"text","text4":"text","display_order":"uint"},
+    "data": [
+{"id":1769,"project_id":2,"repo_id":2,"case_id":327,"field_id":5,"text1":"<p>Click on the Applications tab<\/p>","text2":null,"text3":"<p>Should be redirected to Applications page where all the already installed available apps are visible<\/p>","text4":null,"display_order":1},
+{"id":1770,"project_id":2,"repo_id":2,"case_id":327,"field_id":5,"text1":"<p>Click on App Store<\/p>","text2":null,"text3":"<p>Should be redirected to Add New Application page where all the uninstalled apps are visible<\/p>","text4":null,"display_order":2},
+{"id":1771,"project_id":2,"repo_id":2,"case_id":327,"field_id":5,"text1":"<p>Search for the Picker App<\/p>","text2":null,"text3":"<p>Should be able to see Picker application option with an Install button<\/p>","text4":null,"display_order":3},
+{"id":1772,"project_id":2,"repo_id":2,"case_id":327,"field_id":5,"text1":"<p>Install the application by clicking on the \"Install\" button<\/p>","text2":null,"text3":"<p>The Picker application should be installed<\/p>","text4":null,"display_order":4},
+{"id":1773,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Navigates to the \"Roles\" page under \"User Management\" section<\/p>","text2":null,"text3":"<p>Should be able to see all the roles that are created so far.<\/p>","text4":null,"display_order":1},
+{"id":1774,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Click on the \"New Role\" button in \"Roles\" page<\/p>","text2":null,"text3":"<p>Role Info window should be visible with Role Name &amp; Description fields<\/p>","text4":null,"display_order":2},
+{"id":1775,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Enter Role Name &amp; Description and then click \"Next\"<\/p>","text2":null,"text3":"<p>Permission window should be visible with all the permissions including Picker app. Under the Picker app these mentioned permissions should be included 1. Activate Picker 2. Deactivate Picker 3. Picker standard functionality<\/p>","text4":null,"display_order":3},
+{"id":1776,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Verify the default values of the permissions under Picker app<\/p>","text2":null,"text3":"<p>All the permissions under Picker app should be unchecked by default<\/p>","text4":null,"display_order":4},
+{"id":1777,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Verify the information tool tip of the permissions under Picker app<\/p>","text2":null,"text3":"<p>The permissions should contain these information in the tool tips |||:Permission|:Information || Activate Picker | User will be able to activate the picker application for the outlet with the given email and password. || Deactivate Picker | User will be able to deactivate the picker application by logging out. || Picker standard functionality | User will be able to access and manage orders by picking items, updating availability of items, substitutions and printing.<\/p>","text4":null,"display_order":5},
+{"id":1778,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Chick on all the check boxes under Picker app<\/p>","text2":null,"text3":"<p>The permissions under Picker app will be granted for the specific role &amp; \"Add Role\" button should be enable<\/p>","text4":null,"display_order":6},
+{"id":1779,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Click on 'Add Role' button<\/p>","text2":null,"text3":"<p>Window should be closed with an alert saying 'Successfully created a new role' and the created role should be visible on Roles page<\/p>","text4":null,"display_order":7},
+{"id":1780,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Navigates to the \"Groups\" page under \"User Management\" section<\/p>","text2":null,"text3":"<p>Should be able to see all the groups that are created so far.<\/p>","text4":null,"display_order":8},
+{"id":1781,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Click on New Group button<\/p>","text2":null,"text3":"<p>Group Info window should be visible with Group Name &amp; Description fields<\/p>","text4":null,"display_order":9},
+{"id":1782,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Enter Group Name &amp; Description and Click on \"Next\" button<\/p>","text2":null,"text3":"<p>Brand &amp; Location selection window should be visible with Select Kitchen(s) &amp; Select Brand(s) options<\/p>","text4":null,"display_order":10},
+{"id":1783,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Select 'All' option in \"Select Kitchen(s)\" field and select 'All' option in \"Select Brand(s)\" field<\/p>","text2":null,"text3":"<p>Next button should be enabled<\/p>","text4":null,"display_order":11},
+{"id":1784,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Click on Next button<\/p>","text2":null,"text3":"<p>Assign Users window should be visible with enabled Done button<\/p>","text4":null,"display_order":12},
+{"id":1785,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Click on Done button<\/p>","text2":null,"text3":"<p>Window should be closed with an alert saying 'Successfully created a new group' and the created group should be visible on Groups page<\/p>","text4":null,"display_order":13},
+{"id":1786,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Navigates to the \"Users\" page under \"User Management\" section<\/p>","text2":null,"text3":"<p>Should be able to see all the users that are created so far.<\/p>","text4":null,"display_order":14},
+{"id":1787,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Click on New User button<\/p>","text2":null,"text3":"<p>User Info window should be visible with following fields. Name Surname Telephone Email Employee ID Assign Group(s)<\/p>","text4":null,"display_order":15},
+{"id":1788,"project_id":2,"repo_id":2,"case_id":328,"field_id":5,"text1":"<p>Fill all the fields and click on Assign Group(s) &amp; search and select the previously created group<\/p>","text2":null,"text3":"<p>Next button should be enabled<\/p>","text4":null,"display_order":16}
+    ]
+},
+"repository_case_tags": {
+    "schema": {"project_id":"id","repo_id":"id","case_id":"id","tag_id":"id"},
+    "data": [
+{"project_id":2,"repo_id":2,"case_id":327,"tag_id":168},
+{"project_id":2,"repo_id":2,"case_id":328,"tag_id":168},
+{"project_id":2,"repo_id":2,"case_id":329,"tag_id":168},
+{"project_id":2,"repo_id":2,"case_id":330,"tag_id":168},
+{"project_id":2,"repo_id":2,"case_id":331,"tag_id":168},
+{"project_id":2,"repo_id":2,"case_id":332,"tag_id":168},
+{"project_id":2,"repo_id":2,"case_id":489,"tag_id":168}
+    ]
+},
+"repository_case_values": {
+    "schema": {"project_id":"id","repo_id":"id","case_id":"id","field_id":"id","value_id":"id"},
+    "data": [
+{"project_id":2,"repo_id":2,"case_id":327,"field_id":7,"value_id":13},
+{"project_id":2,"repo_id":2,"case_id":327,"field_id":8,"value_id":18},
+{"project_id":2,"repo_id":2,"case_id":328,"field_id":7,"value_id":13},
+{"project_id":2,"repo_id":2,"case_id":328,"field_id":8,"value_id":18},
+{"project_id":2,"repo_id":2,"case_id":329,"field_id":7,"value_id":16},
+{"project_id":2,"repo_id":2,"case_id":329,"field_id":7,"value_id":17},
+{"project_id":2,"repo_id":2,"case_id":329,"field_id":8,"value_id":18},
+{"project_id":2,"repo_id":2,"case_id":330,"field_id":7,"value_id":16},
+{"project_id":2,"repo_id":2,"case_id":330,"field_id":7,"value_id":17},
+{"project_id":2,"repo_id":2,"case_id":330,"field_id":8,"value_id":19},
+{"project_id":2,"repo_id":2,"case_id":331,"field_id":7,"value_id":16},
+{"project_id":2,"repo_id":2,"case_id":331,"field_id":7,"value_id":17},
+{"project_id":2,"repo_id":2,"case_id":331,"field_id":8,"value_id":19},
+{"project_id":2,"repo_id":2,"case_id":332,"field_id":7,"value_id":16},
+{"project_id":2,"repo_id":2,"case_id":332,"field_id":7,"value_id":17},
+{"project_id":2,"repo_id":2,"case_id":332,"field_id":8,"value_id":19},
+{"project_id":2,"repo_id":2,"case_id":333,"field_id":7,"value_id":17},
+{"project_id":2,"repo_id":2,"case_id":333,"field_id":8,"value_id":19},
+{"project_id":2,"repo_id":2,"case_id":334,"field_id":7,"value_id":13},
+{"project_id":2,"repo_id":2,"case_id":334,"field_id":8,"value_id":19},
+{"project_id":2,"repo_id":2,"case_id":335,"field_id":7,"value_id":13},
+{"project_id":2,"repo_id":2,"case_id":335,"field_id":8,"value_id":19},
+{"project_id":2,"repo_id":2,"case_id":336,"field_id":7,"value_id":13},
+{"project_id":2,"repo_id":2,"case_id":336,"field_id":8,"value_id":19},
+{"project_id":2,"repo_id":2,"case_id":337,"field_id":7,"value_id":13},
+{"project_id":2,"repo_id":2,"case_id":337,"field_id":8,"value_id":18},
+{"project_id":2,"repo_id":2,"case_id":338,"field_id":7,"value_id":13},
+{"project_id":2,"repo_id":2,"case_id":338,"field_id":8,"value_id":19},
+{"project_id":2,"repo_id":2,"case_id":339,"field_id":7,"value_id":16},
+{"project_id":2,"repo_id":2,"case_id":339,"field_id":8,"value_id":19},
+{"project_id":2,"repo_id":2,"case_id":340,"field_id":7,"value_id":16},
+{"project_id":2,"repo_id":2,"case_id":340,"field_id":8,"value_id":18},
+{"project_id":2,"repo_id":2,"case_id":341,"field_id":7,"value_id":17},
+{"project_id":2,"repo_id":2,"case_id":341,"field_id":8,"value_id":19},
+{"project_id":2,"repo_id":2,"case_id":342,"field_id":7,"value_id":17},
+{"project_id":2,"repo_id":2,"case_id":342,"field_id":8,"value_id":18},
+{"project_id":2,"repo_id":2,"case_id":343,"field_id":7,"value_id":17},
+{"project_id":2,"repo_id":2,"case_id":343,"field_id":8,"value_id":19},
+{"project_id":2,"repo_id":2,"case_id":4942,"field_id":7,"value_id":14}
+    ]
+},
+"repository_cases": {
+    "schema": {"id":"id","key":"id","project_id":"id","repo_id":"id","folder_id":"id","template_id":"id","name":"string","state_id":"id","estimate":"uint","forecast":"uint","display_order":"uint","created_at":"timestamp","created_by":"id","custom_priority":"mixed","custom_description":"mixed","custom_expected":"mixed","custom_automation_status":"mixed","custom_preconditions":"mixed","custom_steps_text":"mixed"},
+    "data": [
+{"id":327,"key":327,"project_id":2,"repo_id":2,"folder_id":172,"template_id":2,"name":"Verify the ability to install the Picker App in the GC App Store","state_id":4,"estimate":null,"forecast":null,"display_order":1,"created_at":"2024-01-16 12:08:17.950814","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":10,"custom_preconditions":"<p>User should have logged into GC and navigated to App Store.<\/p><p>\u00a0<\/p><figure class=\"image\"><img src=\"\/attachments\/view\/4\" alt=\"4\" \/><\/figure>","custom_steps_text":null},
+{"id":328,"key":328,"project_id":2,"repo_id":2,"folder_id":172,"template_id":2,"name":"Verify the ability to configure a user with Activate Picker, Deactivate Picker and Picker standard functionality permissions","state_id":4,"estimate":null,"forecast":null,"display_order":2,"created_at":"2024-01-16 12:08:17.974154","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":10,"custom_preconditions":"<p>User should have logged into GC and it should have access to \"User Management\" section The Picker application should be installed for the partner account<\/p>","custom_steps_text":null},
+{"id":329,"key":329,"project_id":2,"repo_id":2,"folder_id":174,"template_id":2,"name":"Verify the ability to activate the Picker App with a user who has the 'Activate Picker' permission","state_id":4,"estimate":null,"forecast":null,"display_order":1,"created_at":"2024-01-16 12:08:18.036359","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":12,"custom_preconditions":"User should have permission to activate the application (Activate Picker permission should be enabled in GC)\nPicker app should be installed for the partner account in GrubCenter","custom_steps_text":null},
+{"id":330,"key":330,"project_id":2,"repo_id":2,"folder_id":174,"template_id":2,"name":"Verify the inability to activate the Picker App with a user when the Picker App is not installed in the partner account","state_id":4,"estimate":null,"forecast":null,"display_order":2,"created_at":"2024-01-16 12:08:18.054951","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":12,"custom_preconditions":"User should have permission to activate the application (Activate Picker permission is enabled in GC)\nPicker app should not be installed for the partner account in GrubCenter","custom_steps_text":null},
+{"id":331,"key":331,"project_id":2,"repo_id":2,"folder_id":174,"template_id":2,"name":"Verify the inability to activate the Picker App with a user who doesn't have permission to Activate Picker","state_id":4,"estimate":null,"forecast":null,"display_order":3,"created_at":"2024-01-16 12:08:18.076261","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":12,"custom_preconditions":"User shouldn't have permission to activate the application (Activate Picker permission is disabled in GC)\nPicker app should be installed for the partner account in GrubCenter","custom_steps_text":null},
+{"id":332,"key":332,"project_id":2,"repo_id":2,"folder_id":174,"template_id":2,"name":"Verify the availability of a validation message for an invalid email, an invalid password, and both an invalid email and password","state_id":4,"estimate":null,"forecast":null,"display_order":4,"created_at":"2024-01-16 12:08:18.094557","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":12,"custom_preconditions":"User should have permission to activate the application (Activate Picker permission is enabled in GC)\nPicker app should be installed for the partner account in GrubCenter","custom_steps_text":null},
+{"id":333,"key":333,"project_id":2,"repo_id":2,"folder_id":174,"template_id":2,"name":"Verify the availability of a validation message for an email address with an invalid format","state_id":4,"estimate":null,"forecast":null,"display_order":5,"created_at":"2024-01-16 12:08:18.121719","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":12,"custom_preconditions":"User should have permission to activate the application (Activate Picker permission is enabled in GC)\nPicker app should be installed for the partner account in GrubCenter","custom_steps_text":null},
+{"id":334,"key":334,"project_id":2,"repo_id":2,"folder_id":174,"template_id":2,"name":"Verify the ability to activate the Picker App for a user who didn't have activation permission before but received it after enabling it in GC","state_id":4,"estimate":null,"forecast":null,"display_order":6,"created_at":"2024-01-16 12:08:18.139961","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":10,"custom_preconditions":"User should not have permission to activate the application (Activate Picker permission is disabled in GC)\nPicker app should be installed for the partner account in GrubCenter","custom_steps_text":null},
+{"id":335,"key":335,"project_id":2,"repo_id":2,"folder_id":174,"template_id":2,"name":"Verify the ability to activate the Picker App with same user in multiple devices","state_id":4,"estimate":null,"forecast":null,"display_order":7,"created_at":"2024-01-16 12:08:18.179494","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":11,"custom_preconditions":"User should have permission to activate the application (Activate Picker permission is enabled in GC)\nPicker app should be installed for the partner account in GrubCenter\nThe Picker app should be installed on 2 devices","custom_steps_text":null},
+{"id":336,"key":336,"project_id":2,"repo_id":2,"folder_id":174,"template_id":2,"name":"Verify the ability to activate the picker app with different users in the same kitchen on multiple devices","state_id":4,"estimate":null,"forecast":null,"display_order":8,"created_at":"2024-01-16 12:08:18.209568","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":11,"custom_preconditions":"Two users should be configured for the same kitchen from the GrubCenter (Ex: User 1, User 2)\nUsers should have permission to activate the application (Activate Picker permission is enabled in GC)\nPicker app should be installed for the partner account in GrubCenter\nThe Picker app should be installed on 2 devices (Device 1, Device 2)","custom_steps_text":null},
+{"id":337,"key":337,"project_id":2,"repo_id":2,"folder_id":175,"template_id":2,"name":"Verify the availability of the splash screen when the user tries to open the app for the first time after installation","state_id":4,"estimate":null,"forecast":null,"display_order":1,"created_at":"2024-01-16 12:08:18.251622","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":11,"custom_preconditions":null,"custom_steps_text":null},
+{"id":338,"key":338,"project_id":2,"repo_id":2,"folder_id":175,"template_id":2,"name":"Verify the availability of the splash screen when the user tries to open the app after killing and reopening it, and clearing the app cache","state_id":4,"estimate":null,"forecast":null,"display_order":2,"created_at":"2024-01-16 12:08:18.262600","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":11,"custom_preconditions":null,"custom_steps_text":null},
+{"id":339,"key":339,"project_id":2,"repo_id":2,"folder_id":176,"template_id":2,"name":"Verify the availability of only specific kitchens in the locations list when the user has access only to those kitchens within the partner account","state_id":4,"estimate":null,"forecast":null,"display_order":1,"created_at":"2024-01-16 12:08:18.279427","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":12,"custom_preconditions":"Order SDK should be enabled for the kitchen\nOnly specific kitchens within the partner account should be confiured for the User Group under \"User Management\" in GrubCenter\nUser should have permission to activate the application (Activate Picker permission is enabled in GC)\nPicker app should have installed for the partner account in GrubCenter","custom_steps_text":null},
+{"id":340,"key":340,"project_id":2,"repo_id":2,"folder_id":176,"template_id":2,"name":"Verify the availability of all kitchens in the locations list when the user has access to all kitchens within the partner account","state_id":4,"estimate":null,"forecast":null,"display_order":2,"created_at":"2024-01-16 12:08:18.300595","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":12,"custom_preconditions":"Order SDK should be enabled for the kitchens\nAll kitchens within the partner account should be configured for the User Group under \"User Management\" in GrubCenter\nUser should have permission to activate the application (Activate Picker permission is enabled in GC)\nPicker app should be installed for the partner account in GrubCenter","custom_steps_text":null},
+{"id":341,"key":341,"project_id":2,"repo_id":2,"folder_id":176,"template_id":2,"name":"Verify the ability to automatically navigate to the PIN screen when the user has access to only one kitchen","state_id":4,"estimate":null,"forecast":null,"display_order":3,"created_at":"2024-01-16 12:08:18.321808","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":12,"custom_preconditions":"Order SDK should be enabled for the kitchen\nOnly one kitchen within the partner account should be configured for the User Group under \"User Management\" in GrubCenter\nUser should have permission to activate the application (Activate Picker permission is enabled in GC)\nPicker app should be installed for the partner account in GrubCenter","custom_steps_text":null},
+{"id":342,"key":342,"project_id":2,"repo_id":2,"folder_id":176,"template_id":2,"name":"Verify the ability to search for a kitchen in the locations list, select it, and proceed to the login screen","state_id":4,"estimate":null,"forecast":null,"display_order":4,"created_at":"2024-01-16 12:08:18.340075","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":12,"custom_preconditions":"Order SDK should be enabled for the kitchens\nAll the kitchens within the partner account should be configured for the User Group under \"User Management\" in GrubCenter\nUser should have permission to activate the application (Activate Picker permission is enabled in GC)\nPicker app should be installed for the partner account in GrubCenter","custom_steps_text":null},
+{"id":343,"key":343,"project_id":2,"repo_id":2,"folder_id":176,"template_id":2,"name":"Verify the ability to scroll down in the locations list when there are more than 10 kitchens, select one at the bottom, and proceed to the login screen","state_id":4,"estimate":null,"forecast":null,"display_order":5,"created_at":"2024-01-16 12:08:18.367254","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":12,"custom_preconditions":"Order SDK should be enabled for the kitchen\nMore than 10 kitchens within the partner account should be configured for the User Group under \"User Management\" in GrubCenter\nUser should have permission to activate the application (Activate Picker permission is enabled in GC)\nPicker app should be installed for the partner account in GrubCenter","custom_steps_text":null},
+{"id":344,"key":344,"project_id":2,"repo_id":2,"folder_id":176,"template_id":2,"name":"Verify the availability of kitchens when new kitchens are configured for existing brands","state_id":4,"estimate":null,"forecast":null,"display_order":6,"created_at":"2024-01-16 12:08:18.391436","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":10,"custom_preconditions":"Order SDK should be enabled for the kitchen\n\"all\" kitchens and \"all\" brands should be configured for the User Group under \"User Management\" in GrubCenter\nUser should have permission to activate the application (Activate Picker permission is enabled in GC)\nPicker app should be installed for the partner account in GrubCenter","custom_steps_text":null},
+{"id":345,"key":345,"project_id":2,"repo_id":2,"folder_id":176,"template_id":2,"name":"Verify the availability of kitchens when new kitchens are configured for new brands","state_id":4,"estimate":null,"forecast":null,"display_order":7,"created_at":"2024-01-16 12:08:18.417511","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":10,"custom_preconditions":"Order SDK should be enabled for the kitchen\n\"all\" kitchens and \"all\" brands should be configured for the User Group under \"User Management\" in GrubCenter\nUser should have permission to activate the application (Activate Picker permission is enabled in GC)\nPicker app should be installed for the partner account in GrubCenter","custom_steps_text":null},
+{"id":346,"key":346,"project_id":2,"repo_id":2,"folder_id":177,"template_id":2,"name":"Verify the ability to log in to the Picker App with the already activated user PIN","state_id":4,"estimate":null,"forecast":null,"display_order":1,"created_at":"2024-01-16 12:08:18.444570","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":12,"custom_preconditions":"User should have permission for picker standard functionality (Picker standard functionality permission is enabled in GC)\nPicker app should be installed for the partner account in GrubCenter\nPicker app should be activated on the device","custom_steps_text":null},
+{"id":347,"key":347,"project_id":2,"repo_id":2,"folder_id":177,"template_id":2,"name":"Verify the ability to log in to the Picker App with any user PIN except the one with an already activated","state_id":4,"estimate":null,"forecast":null,"display_order":2,"created_at":"2024-01-16 12:08:18.456908","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":12,"custom_preconditions":"User should have the permission for picker standard functionality (Picker standard functionality permission is enabled in GC)\nPicker app should be installed for the partner account in GrubCenter\nPicker should be activated on the device","custom_steps_text":null},
+{"id":4942,"key":4942,"project_id":2,"repo_id":2,"folder_id":172,"template_id":2,"name":"test time stamp","state_id":4,"estimate":null,"forecast":null,"display_order":3,"created_at":"2024-02-08 13:54:25.227436","created_by":1,"custom_priority":2,"custom_description":null,"custom_expected":null,"custom_automation_status":8,"custom_preconditions":null,"custom_steps_text":null}
+    ]
+},
+"repository_folders": {
+    "schema": {"id":"id","project_id":"id","repo_id":"id","parent_id":"id","name":"string","docs":"text","display_order":"uint"},
+    "data": [
+{"id":171,"project_id":2,"repo_id":2,"parent_id":null,"name":"Picker App","docs":"<p>nadeera<\/p>","display_order":1},
+{"id":172,"project_id":2,"repo_id":2,"parent_id":171,"name":"Grubcenter Configuration","docs":"<p>test description<\/p>","display_order":2},
+{"id":173,"project_id":2,"repo_id":2,"parent_id":171,"name":"Activation and Login with user rights","docs":null,"display_order":3},
+{"id":174,"project_id":2,"repo_id":2,"parent_id":173,"name":"Activate","docs":null,"display_order":4},
+{"id":175,"project_id":2,"repo_id":2,"parent_id":173,"name":"Splash Screen","docs":null,"display_order":5},
+{"id":176,"project_id":2,"repo_id":2,"parent_id":173,"name":"Kitchen Selection","docs":null,"display_order":6},
+{"id":177,"project_id":2,"repo_id":2,"parent_id":173,"name":"Login","docs":null,"display_order":7},
+{"id":178,"project_id":2,"repo_id":2,"parent_id":173,"name":"Deactivate","docs":null,"display_order":8},
+{"id":179,"project_id":2,"repo_id":2,"parent_id":173,"name":"Network Error","docs":null,"display_order":9},
+{"id":180,"project_id":2,"repo_id":2,"parent_id":171,"name":"Picking Grocery and Food Items","docs":null,"display_order":10},
+{"id":181,"project_id":2,"repo_id":2,"parent_id":180,"name":"Permission","docs":null,"display_order":11},
+{"id":182,"project_id":2,"repo_id":2,"parent_id":180,"name":"Grocery Orders","docs":null,"display_order":12},
+{"id":183,"project_id":2,"repo_id":2,"parent_id":182,"name":"Delivery by Aggregator","docs":null,"display_order":13},
+{"id":184,"project_id":2,"repo_id":2,"parent_id":183,"name":"Complete","docs":null,"display_order":14},
+{"id":185,"project_id":2,"repo_id":2,"parent_id":184,"name":"Picker App","docs":null,"display_order":15},
+{"id":186,"project_id":2,"repo_id":2,"parent_id":184,"name":"GrubOps 2.0","docs":null,"display_order":16},
+{"id":187,"project_id":2,"repo_id":2,"parent_id":183,"name":"Cancel","docs":null,"display_order":17},
+{"id":188,"project_id":2,"repo_id":2,"parent_id":187,"name":"Picker App","docs":null,"display_order":18},
+{"id":189,"project_id":2,"repo_id":2,"parent_id":187,"name":"Aggregator","docs":null,"display_order":19},
+{"id":190,"project_id":2,"repo_id":2,"parent_id":187,"name":"GrubOps 2.0","docs":null,"display_order":20},
+{"id":191,"project_id":2,"repo_id":2,"parent_id":183,"name":"Printed Receipt","docs":null,"display_order":21},
+{"id":192,"project_id":2,"repo_id":2,"parent_id":183,"name":"QR Code","docs":null,"display_order":22},
+{"id":193,"project_id":2,"repo_id":2,"parent_id":182,"name":"Delivery by Merchant","docs":null,"display_order":23},
+{"id":194,"project_id":2,"repo_id":2,"parent_id":193,"name":"Complete","docs":null,"display_order":24},
+{"id":195,"project_id":2,"repo_id":2,"parent_id":194,"name":"Picker App","docs":null,"display_order":25},
+{"id":196,"project_id":2,"repo_id":2,"parent_id":194,"name":"GrubOps 2.0","docs":null,"display_order":26},
+{"id":197,"project_id":2,"repo_id":2,"parent_id":193,"name":"Cancel","docs":null,"display_order":27},
+{"id":198,"project_id":2,"repo_id":2,"parent_id":197,"name":"Picker App","docs":null,"display_order":28},
+{"id":199,"project_id":2,"repo_id":2,"parent_id":197,"name":"Aggregator","docs":null,"display_order":29},
+{"id":200,"project_id":2,"repo_id":2,"parent_id":197,"name":"GrubOps 2.0","docs":null,"display_order":30},
+{"id":201,"project_id":2,"repo_id":2,"parent_id":193,"name":"Printed Receipt","docs":null,"display_order":31},
+{"id":202,"project_id":2,"repo_id":2,"parent_id":193,"name":"QR Code","docs":null,"display_order":32},
+{"id":203,"project_id":2,"repo_id":2,"parent_id":182,"name":"Multiple Users","docs":null,"display_order":33},
+{"id":204,"project_id":2,"repo_id":2,"parent_id":182,"name":"Partially Pick","docs":null,"display_order":34},
+{"id":205,"project_id":2,"repo_id":2,"parent_id":182,"name":"Multiple Brands","docs":null,"display_order":35},
+{"id":206,"project_id":2,"repo_id":2,"parent_id":182,"name":"Scheduled Orders","docs":null,"display_order":36},
+{"id":207,"project_id":2,"repo_id":2,"parent_id":180,"name":"Food Orders","docs":null,"display_order":37},
+{"id":208,"project_id":2,"repo_id":2,"parent_id":207,"name":"Dine In","docs":null,"display_order":38},
+{"id":209,"project_id":2,"repo_id":2,"parent_id":208,"name":"Complete","docs":null,"display_order":39},
+{"id":210,"project_id":2,"repo_id":2,"parent_id":209,"name":"Picker App","docs":null,"display_order":40},
+{"id":211,"project_id":2,"repo_id":2,"parent_id":209,"name":"GrubOps 2.0","docs":null,"display_order":41},
+{"id":212,"project_id":2,"repo_id":2,"parent_id":208,"name":"Cancel","docs":null,"display_order":42},
+{"id":213,"project_id":2,"repo_id":2,"parent_id":212,"name":"Picker App","docs":null,"display_order":43},
+{"id":214,"project_id":2,"repo_id":2,"parent_id":212,"name":"Aggregator","docs":null,"display_order":44},
+{"id":215,"project_id":2,"repo_id":2,"parent_id":212,"name":"GrubOps 2.0","docs":null,"display_order":45},
+{"id":216,"project_id":2,"repo_id":2,"parent_id":208,"name":"Printed Receipt","docs":null,"display_order":46},
+{"id":217,"project_id":2,"repo_id":2,"parent_id":208,"name":"QR Code","docs":null,"display_order":47},
+{"id":218,"project_id":2,"repo_id":2,"parent_id":207,"name":"Pickup","docs":null,"display_order":48},
+{"id":219,"project_id":2,"repo_id":2,"parent_id":218,"name":"Complete","docs":null,"display_order":49},
+{"id":220,"project_id":2,"repo_id":2,"parent_id":219,"name":"Picker App","docs":null,"display_order":50},
+{"id":221,"project_id":2,"repo_id":2,"parent_id":219,"name":"GrubOps 2.0","docs":null,"display_order":51},
+{"id":222,"project_id":2,"repo_id":2,"parent_id":218,"name":"Cancel","docs":null,"display_order":52},
+{"id":223,"project_id":2,"repo_id":2,"parent_id":222,"name":"Picker App","docs":null,"display_order":53},
+{"id":224,"project_id":2,"repo_id":2,"parent_id":222,"name":"Aggregator","docs":null,"display_order":54},
+{"id":225,"project_id":2,"repo_id":2,"parent_id":222,"name":"GrubOps 2.0","docs":null,"display_order":55},
+{"id":226,"project_id":2,"repo_id":2,"parent_id":218,"name":"Printed Receipt","docs":null,"display_order":56},
+{"id":227,"project_id":2,"repo_id":2,"parent_id":218,"name":"QR Code","docs":null,"display_order":57},
+{"id":228,"project_id":2,"repo_id":2,"parent_id":207,"name":"Delivery by Food Aggregator","docs":null,"display_order":58},
+{"id":229,"project_id":2,"repo_id":2,"parent_id":228,"name":"Complete","docs":null,"display_order":59},
+{"id":230,"project_id":2,"repo_id":2,"parent_id":229,"name":"Picker App","docs":null,"display_order":60},
+{"id":231,"project_id":2,"repo_id":2,"parent_id":229,"name":"GrubOps 2.0","docs":null,"display_order":61},
+{"id":232,"project_id":2,"repo_id":2,"parent_id":228,"name":"Cancel","docs":null,"display_order":62},
+{"id":233,"project_id":2,"repo_id":2,"parent_id":232,"name":"Picker App","docs":null,"display_order":63},
+{"id":234,"project_id":2,"repo_id":2,"parent_id":232,"name":"Aggregator","docs":null,"display_order":64},
+{"id":235,"project_id":2,"repo_id":2,"parent_id":232,"name":"GrubOps 2.0","docs":null,"display_order":65},
+{"id":236,"project_id":2,"repo_id":2,"parent_id":228,"name":"Printed Receipt","docs":null,"display_order":66},
+{"id":237,"project_id":2,"repo_id":2,"parent_id":228,"name":"QR Code","docs":null,"display_order":67},
+{"id":238,"project_id":2,"repo_id":2,"parent_id":207,"name":"Delivery by Restaurant","docs":null,"display_order":68},
+{"id":239,"project_id":2,"repo_id":2,"parent_id":238,"name":"Complete","docs":null,"display_order":69},
+{"id":240,"project_id":2,"repo_id":2,"parent_id":239,"name":"Picker App","docs":null,"display_order":70},
+{"id":241,"project_id":2,"repo_id":2,"parent_id":240,"name":"In House","docs":null,"display_order":71},
+{"id":242,"project_id":2,"repo_id":2,"parent_id":240,"name":"Third Party","docs":null,"display_order":72},
+{"id":243,"project_id":2,"repo_id":2,"parent_id":239,"name":"GrubOps 2.0","docs":null,"display_order":73},
+{"id":244,"project_id":2,"repo_id":2,"parent_id":238,"name":"Cancel","docs":null,"display_order":74},
+{"id":245,"project_id":2,"repo_id":2,"parent_id":244,"name":"Picker App","docs":null,"display_order":75},
+{"id":246,"project_id":2,"repo_id":2,"parent_id":244,"name":"Aggregator","docs":null,"display_order":76},
+{"id":247,"project_id":2,"repo_id":2,"parent_id":244,"name":"GrubOps 2.0","docs":null,"display_order":77},
+{"id":248,"project_id":2,"repo_id":2,"parent_id":238,"name":"Printed Receipt","docs":null,"display_order":78},
+{"id":249,"project_id":2,"repo_id":2,"parent_id":238,"name":"QR Code","docs":null,"display_order":79},
+{"id":250,"project_id":2,"repo_id":2,"parent_id":207,"name":"Multiple Users","docs":null,"display_order":80},
+{"id":251,"project_id":2,"repo_id":2,"parent_id":207,"name":"Multiple Brands","docs":null,"display_order":81},
+{"id":252,"project_id":2,"repo_id":2,"parent_id":207,"name":"Scheduled Orders","docs":null,"display_order":82},
+{"id":253,"project_id":2,"repo_id":2,"parent_id":171,"name":"Printer Connection","docs":null,"display_order":83},
+{"id":254,"project_id":2,"repo_id":2,"parent_id":171,"name":"Completion via Scheduler","docs":null,"display_order":84},
+{"id":255,"project_id":2,"repo_id":2,"parent_id":171,"name":"Settings","docs":null,"display_order":85}
+    ]
+},
+"roles": {
+    "schema": {"id":"id","name":"string"},
+    "data": [
+{"id":1,"name":"Read-only"},
+{"id":2,"name":"Tester"},
+{"id":3,"name":"Designer"},
+{"id":4,"name":"Lead"}
+    ]
+},
+"states": {
+    "schema": {"id":"id","name":"string"},
+    "data": [
+{"id":1,"name":"Draft"},
+{"id":2,"name":"Under review"},
+{"id":3,"name":"Rejected"},
+{"id":4,"name":"Active"},
+{"id":5,"name":"Retired"},
+{"id":6,"name":"New"},
+{"id":7,"name":"In progress"},
+{"id":8,"name":"Under review"},
+{"id":9,"name":"Rejected"},
+{"id":10,"name":"Done"},
+{"id":11,"name":"New"},
+{"id":12,"name":"In progress"},
+{"id":13,"name":"Under review"},
+{"id":14,"name":"Rejected"},
+{"id":15,"name":"Done"}
+    ]
+},
+"statuses": {
+    "schema": {"id":"id","name":"string","system_name":"string","color":"string","is_final":"bool","is_untested":"bool","is_passed":"bool","is_failed":"bool"},
+    "data": [
+{"id":1,"name":"Untested","system_name":"untested","color":"C8C9CA","is_final":0,"is_untested":1,"is_passed":0,"is_failed":0},
+{"id":2,"name":"Passed","system_name":"status1","color":"36AB51","is_final":1,"is_untested":0,"is_passed":1,"is_failed":0},
+{"id":3,"name":"Failed","system_name":"status2","color":"F44B25","is_final":1,"is_untested":0,"is_passed":0,"is_failed":1},
+{"id":4,"name":"Retest","system_name":"status3","color":"FFAA00","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":5,"name":"Blocked","system_name":"status4","color":"9A9B9C","is_final":1,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":6,"name":"Skipped","system_name":"status5","color":"16ABC5","is_final":1,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":7,"name":"Exception","system_name":"status6","color":"FA7C14","is_final":1,"is_untested":0,"is_passed":0,"is_failed":1},
+{"id":8,"name":"Unnamed","system_name":"status7","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":9,"name":"Unnamed","system_name":"status8","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":10,"name":"Unnamed","system_name":"status9","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":11,"name":"Unnamed","system_name":"status10","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":12,"name":"Unnamed","system_name":"status11","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":13,"name":"Unnamed","system_name":"status12","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":14,"name":"Unnamed","system_name":"status13","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":15,"name":"Unnamed","system_name":"status14","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":16,"name":"Unnamed","system_name":"status15","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":17,"name":"Unnamed","system_name":"status16","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":18,"name":"Unnamed","system_name":"status17","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":19,"name":"Unnamed","system_name":"status18","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":20,"name":"Unnamed","system_name":"status19","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":21,"name":"Unnamed","system_name":"status20","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":22,"name":"Unnamed","system_name":"status21","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":23,"name":"Unnamed","system_name":"status22","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":24,"name":"Unnamed","system_name":"status23","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0},
+{"id":25,"name":"Unnamed","system_name":"status24","color":"E7E8E9","is_final":0,"is_untested":0,"is_passed":0,"is_failed":0}
+    ]
+},
+"tags": {
+    "schema": {"id":"id","project_id":"id","name":"string"},
+    "data": [
+{"id":168,"project_id":2,"name":"functional"},
+{"id":169,"project_id":2,"name":"other"}
+    ]
+},
+"template_fields": {
+    "schema": {"template_id":"id","field_id":"id"},
+    "data": [
+{"template_id":1,"field_id":1},
+{"template_id":2,"field_id":2},
+{"template_id":3,"field_id":2},
+{"template_id":4,"field_id":2},
+{"template_id":2,"field_id":3},
+{"template_id":3,"field_id":3},
+{"template_id":4,"field_id":3},
+{"template_id":3,"field_id":4},
+{"template_id":4,"field_id":4},
+{"template_id":2,"field_id":5},
+{"template_id":4,"field_id":5},
+{"template_id":2,"field_id":6},
+{"template_id":3,"field_id":6},
+{"template_id":4,"field_id":6},
+{"template_id":2,"field_id":7},
+{"template_id":3,"field_id":7},
+{"template_id":4,"field_id":7},
+{"template_id":2,"field_id":8},
+{"template_id":3,"field_id":8},
+{"template_id":4,"field_id":8},
+{"template_id":2,"field_id":9},
+{"template_id":3,"field_id":9},
+{"template_id":4,"field_id":9},
+{"template_id":3,"field_id":10},
+{"template_id":4,"field_id":10}
+    ]
+},
+"templates": {
+    "schema": {"id":"id","name":"string"},
+    "data": [
+{"id":1,"name":"Exploratory session"},
+{"id":2,"name":"Case (steps)"},
+{"id":3,"name":"Case (text)"},
+{"id":4,"name":"Case (hybrid steps & text)"}
+    ]
+},
+"user_groups": {
+    "schema": {"user_id":"id","group_id":"id"},
+    "data": [
+
+    ]
+},
+"users": {
+    "schema": {"id":"id","name":"string","email":"string","type":"uint","role_id":"id","is_active":"bool","is_api":"bool","created_at":"timestamp","created_by":"id"},
+    "data": [
+{"id":1,"name":"Nadeera Abeykoon","email":"nadeera.abeykoon@grubtech.com","type":4,"role_id":4,"is_active":1,"is_api":0,"created_at":"2024-01-11 05:59:02.501365","created_by":null},
+{"id":2,"name":"Madhubhashini Ekanayake","email":"madhubhashini@grubtech.com","type":2,"role_id":4,"is_active":1,"is_api":0,"created_at":"2024-01-17 06:30:39.672641","created_by":1},
+{"id":3,"name":"Shivantha Lakmal","email":"shivantha@grubtech.com","type":2,"role_id":4,"is_active":1,"is_api":0,"created_at":"2024-01-17 07:16:30.791808","created_by":1},
+{"id":4,"name":"Dinuka Abeysinghe","email":"dinuka@grubtech.com","type":2,"role_id":4,"is_active":1,"is_api":0,"created_at":"2024-01-18 08:41:41.933399","created_by":1},
+{"id":5,"name":"Lathika Herath","email":"lathika.herath@grubtech.com","type":2,"role_id":4,"is_active":1,"is_api":0,"created_at":"2024-01-18 08:46:22.288107","created_by":1},
+{"id":6,"name":"Sasika Bandara","email":"sasika@grubtech.com","type":2,"role_id":4,"is_active":1,"is_api":0,"created_at":"2024-01-18 08:46:47.904519","created_by":1},
+{"id":7,"name":"Roshan Manawadu","email":"roshan.manawadu@grubtech.com","type":2,"role_id":4,"is_active":1,"is_api":0,"created_at":"2024-01-18 08:48:45.828043","created_by":1}
+    ]
+}
+}
